@@ -25,8 +25,4 @@
     <ProjectReference Include="..\Servicos\Servicos.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

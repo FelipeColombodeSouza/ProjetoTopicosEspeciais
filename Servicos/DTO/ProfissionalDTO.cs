@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Servicos
+namespace Servicos.DTO
 {
-    public class EditarPizzariaDTO
+    public class ProfissionalDTO
     {
         public string Nome { get; set; }
 
         public string Endereco { get; set; }
 
-        public string Telefone { get; set; }
+        public int Crm { get; set; }
     }
 }
