@@ -18,10 +18,11 @@ Projeto de Tópicos Especiais
 - [ ] Excluir
 - [ ] Listar
 2. Profissional
-- [ ] Cadastrar
-- [ ] Editar
-- [ ] Excluir
-- [ ] Listar
+- [X] Cadastrar
+- [X] Editar
+- [X] Excluir
+- [X] Listar
+- [X] Listar por ID
 3. Atendimento
 - [ ] Cadastrar
 - [ ] Editar
