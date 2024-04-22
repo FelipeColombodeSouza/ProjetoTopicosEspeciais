@@ -20,12 +20,13 @@ Projeto de Tópicos Especiais
 - [ ] Editar
 - [ ] Excluir
 - [ ] Listar
+- [ ] Buscar por ID
 2. Profissional
 - [X] Cadastrar
 - [X] Editar
 - [X] Excluir
 - [X] Listar
-- [X] Listar por ID
+- [X] Buscar por ID
 3. Atendimento
 - [ ] Cadastrar
 - [ ] Editar
