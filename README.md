@@ -6,7 +6,10 @@ Projeto de Tópicos Especiais
 1. Paciente
    - (inserir campos do paciente)
 2. Profissional
-   - (inserir campos do profissional)
+   - Id - Id do registro do Profissional;
+   - Nome - Nome do profissional;
+   - Endereco - Endereço do profissional;
+   - Crm - Código de identificação médica do profissional;
 3. Atendimento
    - (inserir campos do atendimento)
 
