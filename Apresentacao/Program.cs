@@ -16,11 +16,13 @@ builder.Services.AddDbContext<DataContext>(option =>
 );
 
 builder.Services.AddScoped<IRepoPaciente, RepoPaciente>();
+builder.Services.AddScoped<IServPaciente,  ServPaciente>();
 
 builder.Services.AddScoped<IRepoProfissional, RepoProfissional>();
 builder.Services.AddScoped<IServProfissional, ServProfissional>();
 
 builder.Services.AddScoped<IRepoAtendimento, RepoAtendimento>();
+builder.Services.AddScoped<IServAtendimento, ServAtendimento>();
 
 var app = builder.Build();
 

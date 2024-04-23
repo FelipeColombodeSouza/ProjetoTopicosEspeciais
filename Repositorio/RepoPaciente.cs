@@ -17,6 +17,7 @@ namespace Repositorio
 
         public void Inserir(Paciente paciente)
         {
+
             _dataContext.Add(paciente);
 
             _dataContext.SaveChanges();
