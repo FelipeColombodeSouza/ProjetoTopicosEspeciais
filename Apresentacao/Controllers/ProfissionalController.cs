@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Servicos;
-using Servicos.DTO;
 
 namespace Apresentacao
 {

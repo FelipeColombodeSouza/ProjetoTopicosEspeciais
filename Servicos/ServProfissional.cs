@@ -1,6 +1,5 @@
 ﻿using Entidades;
 using Repositorio;
-using Servicos.DTO;
 
 namespace Servicos
 {
