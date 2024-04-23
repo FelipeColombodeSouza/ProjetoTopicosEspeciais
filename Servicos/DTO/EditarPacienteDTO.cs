@@ -1,14 +1,9 @@
-﻿namespace Entidades
+﻿
+namespace Servicos
 {
-    public class Paciente
+    public class EditarPacienteDTO
     {
-        public int Id { get; set; }
-
         public string Nome { get; set; }
-
-        public string Cpf {  get; set; }
-
-        public DateTime DataNascimento { get; set; }
 
         public string Email { get; set; }
 

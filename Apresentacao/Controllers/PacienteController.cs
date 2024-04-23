@@ -29,5 +29,21 @@ namespace Apresentacao
             }
         }
 
+        [Route("/api/[controller]/Editar/{id}")]
+        [HttpPut]
+        public IActionResult Editar(int id , [FromBody]EditarPacienteDTO editarPacienteDto)
+        {
+            try
+            {
+                _servPaciente.Editar(id, editarPacienteDto);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
     }
 }
