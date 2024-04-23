@@ -8,6 +8,7 @@ Projeto de Tópicos Especiais
    - Nome - Nome do paciente;
    - Cpf - Cpf do paciente;
    - DataNascimento - Data de nascimento do paciente;
+   - Email - Email do paciente; 
    - Telefone - Telefone do paciente;
    - Endereco - Endereço do paciente, rua;
 2. Profissional
@@ -27,7 +28,7 @@ Projeto de Tópicos Especiais
 
 1. Paciente
 - [X] Cadastrar
-- [ ] Editar
+- [X] Editar
 - [ ] Excluir
 - [ ] Listar
 - [ ] Buscar por ID
