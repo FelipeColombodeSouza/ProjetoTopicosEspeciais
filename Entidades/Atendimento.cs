@@ -23,7 +23,7 @@
 
     public enum EnumConsultaStatus
     {
-        Agendada = 1,
+        Agendado = 1,
         EmAndamento = 2,
         Finalizada = 3,
         Cancelada = 9

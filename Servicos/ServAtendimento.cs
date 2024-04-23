@@ -26,6 +26,7 @@ namespace Servicos
             atendimento.DataConsulta = inserirAtendimentoDto.DataConsulta;
             atendimento.CodigoPaciente = inserirAtendimentoDto.CodigoPaciente;
             atendimento.CodigoProfissional = inserirAtendimentoDto.CodigoProfissional;
+            atendimento.Status = EnumConsultaStatus.Agendado;
 
             _repoAtendimento.Inserir(atendimento);
         }
