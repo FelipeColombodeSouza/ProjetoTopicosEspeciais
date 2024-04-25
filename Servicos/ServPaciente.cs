@@ -8,6 +8,9 @@ namespace Servicos
     {
         void Inserir(InserirPacienteDTO inserirPacienteDto);
         void Editar(int id, EditarPacienteDTO editarPacienteDto);
+        List<Paciente> BuscarTodos();
+        Paciente BuscarPorId(int id);
+        void Remover(int id);
     }
 
     public class ServPaciente: IServPaciente
@@ -42,6 +45,27 @@ namespace Servicos
             paciente.Endereco = editarPacienteDto.Endereco;
 
             _repoPaciente.Editar(paciente);
+        }
+
+        public List<Paciente> BuscarTodos()
+        {
+            var pacientes = _repoPaciente.BuscarTodos();
+
+            return pacientes;
+        }
+
+        public Paciente BuscarPorId(int id)
+        {
+            var paciente = _repoPaciente.BuscarPorId(id);
+
+            return paciente;
+        }
+
+        public void Remover(int id)
+        {
+            var paciente = _repoPaciente.BuscarPorId(id);
+
+            _repoPaciente.Remover(paciente);
         }
     }
 }
