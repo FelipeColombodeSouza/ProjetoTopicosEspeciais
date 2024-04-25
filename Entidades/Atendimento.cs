@@ -14,9 +14,9 @@
 
         public int CodigoPaciente { get; set; }
 
-        public Paciente Paciente { get; set; }
-
         public int CodigoProfissional { get; set; }
+
+        public Paciente Paciente { get; set; }
 
         public Profissional Profissional { get; set; }
     }

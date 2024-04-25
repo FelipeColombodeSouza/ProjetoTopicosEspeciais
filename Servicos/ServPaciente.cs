@@ -24,6 +24,8 @@ namespace Servicos
 
         public void Inserir(InserirPacienteDTO pacienteDto)
         {
+            ValidaDadosInserirPaciente(pacienteDto);
+
             var paciente = new Paciente();
             paciente.Nome = pacienteDto.Nome;
             paciente.Cpf = pacienteDto.Cpf;
@@ -33,6 +35,14 @@ namespace Servicos
             paciente.Endereco = pacienteDto.Endereco;
 
             _repoPaciente.Inserir(paciente);
+        }
+
+        public void ValidaDadosInserirPaciente(InserirPacienteDTO pacienteDto)
+        {
+            if (pacienteDto.Cpf.Length > 11)
+            {
+                throw new Exception("CPF inválido.");
+            }
         }
 
         public void Editar(int id, EditarPacienteDTO editarPacienteDto)
