@@ -29,9 +29,9 @@ Projeto de Tópicos Especiais
 1. Paciente
 - [X] Cadastrar
 - [X] Editar
-- [ ] Excluir
-- [ ] Listar
-- [ ] Buscar por ID
+- [X] Excluir
+- [X] Listar
+- [X] Buscar por ID
 2. Profissional
 - [X] Cadastrar
 - [X] Editar
@@ -40,8 +40,11 @@ Projeto de Tópicos Especiais
 - [X] Buscar por ID
 3. Atendimento
 - [X] Cadastrar
-- [ ] Editar
-- [ ] Excluir
-- [ ] Listar
-- [ ] Vincular Paciente
-- [ ] Vincular Profissional
+- [X] Editar
+- [X] Excluir
+- [X] Listar
+- [X] Buscar Histórico do Paciente
+- [X] Buscar Histórico do Profissional
+- [X] Inicar Atendimento
+- [X] Finalizar Atendimento
+- [X] Cancelar Atendimento
