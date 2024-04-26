@@ -4,7 +4,6 @@ Projeto de Tópicos Especiais - Cadastro de atendimentos entre pacientes e profi
 ## Entidades
 
 1. Paciente
-<<<<<<< first_layers
    - Id - Id do registro do Paciente;
    - Nome - Nome do paciente;
    - Cpf - Cpf do paciente;
@@ -24,26 +23,6 @@ Projeto de Tópicos Especiais - Cadastro de atendimentos entre pacientes e profi
    - Status - Status do atendimento;
    - CodigoPaciente - Codigo relacionado do paciente;
    - CodigoProfissional - Codigo relacionado do profissional;
-=======
-   - ID             | Int
-   - Nome           | String
-   - Endereco       | String 
-   - Telefone       | String
-   - (inserir campos do paciente)
-2. Profissional
-   - ID             | Int
-   - Nome           | String
-   - Telefone       | String
-   - CRM            | Int
-   - (inserir campos do profissional)
-3. Atendimento
-   - ID             | Int
-   - Descricao      | String
-   - Status         | Enum
-   - PacienteId     | Int
-   - ProfissionalId | Int
-   - (inserir campos do atendimento)
->>>>>>> main
 
 ## Operações
 
