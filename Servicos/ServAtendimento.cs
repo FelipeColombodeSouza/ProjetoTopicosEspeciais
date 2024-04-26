@@ -1,5 +1,6 @@
 ﻿using Entidades;
 using Repositorio;
+using System.Linq;
 
 namespace Servicos
 {
@@ -62,6 +63,21 @@ namespace Servicos
             {
                 throw new Exception("Paciente inválido.");
             }
+
+            var AtendimentosProfissional = _repoAtendimento.BuscarHistoricoProfissional(profissional.Id);
+            IEnumerable<Atendimento> AtendProfData = Enumerable.Where(AtendimentosProfissional, n => n.DataConsulta == inserirAtendimentoDto.DataConsulta);
+            if(AtendProfData.Count() >= 1)
+            {
+                throw new Exception("Já existe um atendimento para o profissional " + profissional.Nome + " na data: " + AtendProfData.First().DataConsulta.ToString());
+            }
+
+            var AtendimentosPaciente = _repoAtendimento.BuscarHistoricoPaciente(paciente.Id);
+            IEnumerable<Atendimento> AtendPaciData = Enumerable.Where(AtendimentosPaciente, n => n.DataConsulta == inserirAtendimentoDto.DataConsulta);
+            if (AtendPaciData.Count() >= 1)
+            {
+                throw new Exception("Já existe um atendimento para o paciente " + paciente.Nome + " na data: " + AtendPaciData.First().DataConsulta.ToString());
+            }
+
         }
 
         public void Editar(int id, EditarAtendimentoDTO editarAtendimentoDto)
